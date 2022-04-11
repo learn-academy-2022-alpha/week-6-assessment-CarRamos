@@ -25,6 +25,8 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Researched answer: Many resetful routs can take params but the one that must have them is Delete. You have to know specifically what you are deleting 
 
+  The RESTful routes that must always have params passed through them are delete, show, and update. These three routes are specific and need additional information to be passed.
+
 
 
 3. Name three rails generator commands. What is created by each?
@@ -35,6 +37,8 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Researched answer: Those first two
   and rails db:seed Loads the seed data
+
+  rails generate model is also an rails generator command.
 
 
 

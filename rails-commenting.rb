@@ -7,7 +7,7 @@
 # FILE: app/controller/blog_posts_controller.rb
 
 # ---1)
-# these are the routes the specific actions that are taken for each command
+# these are the parent and child classes
 class BlogPostsController < ApplicationController
   def index
     # ---2)
@@ -22,7 +22,7 @@ class BlogPostsController < ApplicationController
   end
 
   # ---4)
-  #the new command will gererate a new post
+  #the new command and directs you to a form to input a new entry
   def new
     @post = BlogPost.new
   end
@@ -68,7 +68,7 @@ class BlogPostsController < ApplicationController
   end
 
   # ---9)
-  #this privte line is a hidden param that keeps these vaiables unchangeable 
+  #this privte line is a hidden param that keeps these vaiables unchangeable unless it is accessed though specified controller
   private
   def blog_post_params
     # ---10)
